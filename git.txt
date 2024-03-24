@@ -1,0 +1,41 @@
+# Navigate to the parent directory
+cd path/to/parent/directory
+
+# Create the learn_git folder and navigate into it
+mkdir learn_git && cd learn_git
+
+# Create third.txt file
+touch third.txt
+
+# Initialize an empty git repository
+git init
+
+# Add third.txt to the staging area and commit
+git add third.txt
+git commit -m "adding third.txt"
+
+# View commit history
+git log
+
+# Create fourth.txt file
+touch fourth.txt
+
+# Add fourth.txt to the staging area and commit
+git add fourth.txt
+git commit -m "adding fourth.txt"
+
+# Remove third.txt and stage the deletion
+rm third.txt
+git add .
+
+# Commit the deletion of third.txt
+git commit -m "removing third.txt"
+
+# View commit history
+git log
+
+# Change global settings to core.pager=cat
+git config --global core.pager cat
+
+# List all global configurations for git
+git config --global --list
